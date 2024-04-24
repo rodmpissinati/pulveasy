@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     border: 0;
     padding: 0;
@@ -28,14 +33,14 @@ body{
 
 /* navbar */
 
-#nav{
+/* #nav{
     list-style: none;
     background-color: #183800;
     color: white;
-    position: ;
+    /* position: ; */
 
     
-}
+/* } */
 
 /* #logo {
     display: flex;
@@ -45,7 +50,7 @@ body{
 } */
 
 
-a:hover{
+/* a:hover{
     color:rgb(176, 172, 172)
 }
 
@@ -54,8 +59,8 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 3em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 a{
@@ -67,7 +72,52 @@ a{
     display: flex;
     align-items: center;
     justify-content:space-between;
+} */ 
+
+#logo {
+    width: 25vh;
+    display: flex;
+    
 }
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+nav{
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2vh;
+    background-color: #183800;
+    
+}
+
+a:hover{
+    color:rgb(176, 172, 172)
+}
+
+ul{
+    list-style: none;
+    padding-top: 1em; /*alterar para mudar a largura da nav */
+    padding-bottom: 1em; /*alterar para mudar a largura da nav */
+}
+
+li{
+     padding-top: 2.5em; /*alterar para mudar o posicionamento dos links na nav */
+    padding-left: 5em;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
 
 /* carrossel */
 
