@@ -1,0 +1,78 @@
+body{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login */
+
+
+
+.form{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    padding-top: 20%;
+    padding-right: 15%;
+    background-color: red;
+
+
+    /* @media screen {
+        
+    } */
+}
+
+/* navbar */
+
+#nav{
+    list-style: none;
+    background-color: #183800;
+    color: white;
+    position: ;
+
+    
+}
+
+/* #logo {
+    display: flex;
+    align-items: right;
+    height: 100px;
+    width: 100px;
+} */
+
+
+a:hover{
+    color:rgb(176, 172, 172)
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+a{
+    color:white;
+    text-decoration: none ;
+}
+
+#imgLog{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+/* carrossel */
+
+/* .carousel-inner{
+    height: 50em;
+    width: 100%;
+} */
+
