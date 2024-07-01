@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+.background {
+    position: fixed;
+    background-image: url("trator.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(2, 4fr);
+    height: 100vh;
+    width: 100vw;
+}
+.form {
+    background-color: gray;
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 5em;
+}
+#user, #password {
+    padding: 0.7em 1em;
+    padding-right: 7em;
+    border: 2px solid gray;
+    border-radius: 0.8em;
+    margin-top: 0.2em;
+}
+.form_container input {
+    width: 100%;
+    padding: 1em; /* Corrigido para aumentar o tamanho do input */
+    font-size: 16px;
+}
+#btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7em;
+}
+#btn_form {
+    padding: 0.5em 2em; /* Ajustado para melhor visualização */
+    border: 0.5px solid black;
+    border-radius: 1em;
+    background-color: green;
+    font-size: 1em;
+}
+.form_container input::placeholder {
+    color: gray;
+    text-align: left;
+}
+#txt_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txt_cadastrar {
+    display: flex;
+    padding-top: 0.5em;
+}
+#txt_esqueci {
+    color: blue;
+}

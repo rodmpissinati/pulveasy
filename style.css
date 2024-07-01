@@ -3,25 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Login */
+/* Login + Cadastro */
 
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     width: 100%;
     height:100%;
     font-family: sans-serif;
+    
 }
 .background{
     position: fixed;
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgb(0, 0, 0)), url("trator.jpg");
+    background-image: /*linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgb(0, 0, 0)),*/ url("trator.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -31,8 +24,6 @@ body{
 
 }
 .container{
-
-    padding: 15px;
     display: grid;
     grid-template-areas: auto auto auto auto auto/auto auto auto auto;
 }
@@ -44,25 +35,32 @@ body{
     grid-column-start:3;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-row-end: 4;
-    height: 54em;
+    grid-row-end: 5;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border-radius: 1em;
     color: aliceblue;
+
       
 }
 
-#user, #password{
-    padding: 0.7em 4em;
+#user, #password, #cpf, #email{
+    padding: 0.7em 1em;
+    padding-right: 9em;
     border: 2px solid gray;
     border-radius: 0.8em;
     margin-top: 0.2em;
 }
 
 
+.form_container input{
+    width: 100%;
+    padding: 10em;
+    font-size: 16px;
+
+}
 
 #btn_container {
     display: flex;
@@ -74,7 +72,7 @@ body{
 }
 
 #btn_form {
-    padding: 0.5em 7em;
+    padding: 0.5em 10em; /*deixar 9 ou 10 */
     border: 0.5px solid black;
     border-radius: 1em;
     background-color: green;
@@ -82,71 +80,57 @@ body{
 }
 
  .form_container input::placeholder { /*Para mudar dentro da caixa de texto */
-    color: gray; 
+    color: gray;
+    text-align: left; 
   }
+#txt_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#txt_senha{
+    margin-top: 0.3em;
+}
+
+#txt_esqueci{
+    color: blue;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    text-decoration: underline;
+} 
 
 #txt_cadastrar{
     display: flex;
     padding-top: 0.5em;
+    margin: 0 0.5em;
 }
 
-
-
-
-    /* @media screen {
-        
-    } */
-
-
-.outro{
-    grid-area: a2;
+#link_cadastrar{
+    margin-left: 0.3em;
+    color: blue;
+    text-decoration: underline;
     
 }
 
+input:focus{
+
+}
+
+.txt_cadastro{
+    margin-top: 1em;
+
+}
+
+.container{
+    overflow: hidden;
+}
 
 
 /* navbar */
 
-/* #nav{
-    list-style: none;
-    background-color: #183800;
-    color: white;
-    /* position: ; */
-
-    
-/* } */
-
-/* #logo {
-    display: flex;
-    align-items: right;
-    height: 100px;
-    width: 100px;
-} */
-
-
-/* a:hover{
-    color:rgb(176, 172, 172)
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-a{
-    color:white;
-    text-decoration: none ;
-}
-
-#imgLog{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-} */ 
 
 #logo {
     width: 25vh;
@@ -183,7 +167,7 @@ ul{
 }
 
 li{
-     padding-top: 2.5em; /*alterar para mudar o posicionamento dos links na nav */
+    padding-top: 2.5em; /*alterar para mudar o posicionamento dos links na nav */
     padding-left: 5em;
 }
 
@@ -193,6 +177,7 @@ a{
 }
 
 
+
 /* carrossel */
 
 /* .carousel-inner{
@@ -200,3 +185,54 @@ a{
     width: 100%;
 } */
 
+/* cards (about) */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a09d9d;
+    padding: 3em;
+}
+
+#sobre{
+    font-size: 0.8em;
+    color:#606060;
+    border: 0.1em solid #e8e8e8;
+    padding: 0.6em 1.2em;
+    border-radius: 1.6em;
+    margin-bottom: 1.2em;
+    background-color: white;
+}
+
+#h2Sobre{
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+
+.btnCard{
+    background-color: #183800;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a09d9d;
+   
+}
+
+.card{
+    border: 0.1em solid #e8e8e8;
+    padding: 0.6em 1.2em;
+    border-radius: 1em;
+    margin-bottom: 1.2em;
+    background-color: white;
+}
