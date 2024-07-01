@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login + Cadastro + Cadastro Propriedade */
+
+body{
+    width: 100%;
+    height:100%;
+    font-family: sans-serif;
+    
+}
+.background{
+    position: fixed;
+    background-image: /*linear-gradient(135deg, rgba(0, 0, 0, 0.521), rgb(0, 0, 0)),*/ url("imagens/imagemLogin.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    grid-template-rows: repeat(2, 4fr);
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+.form{
+    /* background: rgba(0, 0, 0, 0.945);  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  */
+    background-color: #a1694f;
+    grid-column: 3 / 4;
+    grid-row: 1 / 5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border-radius: 2em 0 0 2em;
+    border: solid black 1px;
+    padding: 14em; /*para alterar a largura do background do form*/
+
+      
+}
+
+#user, #password, #cpf, #email, #cidade, #bairro, #rua, #numero, #cnpj, #nomeP{
+    padding: 0.7em 1em;
+    padding-right: 9em;
+    border: 2px solid gray;
+    border-radius: 0.8em;
+    margin-top: 0.2em;
+}
+
+
+.form_container input{
+    width: 100%;
+    padding: 10em;
+    font-size: 16px;
+
+}
+
+#btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.7em;
+    
+}
+
+#btn_form {
+    padding: 0.5em 10em; /*deixar 9 ou 10 */
+    border: 0.5px solid black;
+    border-radius: 1em;
+    background-color: green;
+    font-size: 1em;
+}
+
+ .form_container input::placeholder { /*Para mudar dentro da caixa de texto */
+    color: gray;
+    text-align: left; 
+  }
+#txt_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#txt_senha{
+    margin-top: 0.3em;
+}
+
+#txt_esqueci{
+    color: blue;
+    display: flex;
+    justify-content: end;
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    text-decoration: underline;
+} 
+
+#txt_cadastrar{
+    display: flex;
+    padding-top: 0.5em;
+    margin: 0 0.5em;
+}
+
+#link_cadastrar{
+    margin-left: 0.3em;
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+input:focus{
+
+}
+
+.txt_cadastro{
+    margin-top: 1em;
+
+}
+
+.container{
+    overflow: hidden; 
+}
+
+
+/* navbar */
+
+
+#logo {
+    width: 25vh;
+    display: flex;
+    
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+nav{
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2vh;
+    background-color: #183800;
+    
+}
+
+a:hover{
+    color:rgb(176, 172, 172)
+}
+
+ul{
+    list-style: none;
+    padding-top: 1em; /*alterar para mudar a largura da nav */
+    padding-bottom: 1em; /*alterar para mudar a largura da nav */
+}
+
+li{
+    padding-top: 2.5em; /*alterar para mudar o posicionamento dos links na nav */
+    padding-left: 5em;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+/* carrossel */
+
+/* .carousel-inner{
+    height: 50em;
+    width: 100%;
+} */
+
+/* cards (about) */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a09d9d;
+    padding: 3em;
+}
+
+#sobre{
+    font-size: 0.8em;
+    color:#606060;
+    border: 0.1em solid #e8e8e8;
+    padding: 0.6em 1.2em;
+    border-radius: 1.5em;
+    margin-bottom: 1.2em;
+    background-color: white;
+}
+
+#h2Sobre{
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+
+.btnCard{
+    background-color: #183800;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #a09d9d;
+   
+}
+
+.card{
+    border: 0.1em solid #e8e8e8;
+    padding: 0.6em 1.2em;
+    border-radius: 1em;
+    margin-bottom: 1.2em;
+    background-color: white;
+}
