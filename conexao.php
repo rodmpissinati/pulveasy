@@ -2,9 +2,8 @@
 $name = 'db_pulveasy';
 $host = 'localhost';
 $user = 'root';
-$pass = 'aluno123';
+$pass = 'R0drig04@';
 
-$pdo = new PDO('mysql:dbname=' . $name . ';host=' . $host, $user, $pass);
 
 $mysqli = new mysqli("localhost","root","aluno123","db_pulveasy");
 
